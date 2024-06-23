@@ -1,0 +1,1416 @@
+[
+  {
+    "id": 1,
+    "station_number": 1,
+    "station_name": "Shaheed Sthal(First Station)",
+    "distance": 0.0,
+    "line": "Red line"
+  },
+  {
+    "id": 2,
+    "station_number": 2,
+    "station_name": "Hindon River",
+    "distance": 1.0,
+    "line": "Red line"
+  },
+  {
+    "id": 3,
+    "station_number": 3,
+    "station_name": "Arthala",
+    "distance": 2.5,
+    "line": "Red line"
+  },
+  {
+    "id": 4,
+    "station_number": 4,
+    "station_name": "Mohan Nagar",
+    "distance": 3.2,
+    "line": "Red line"
+  },
+  {
+    "id": 5,
+    "station_number": 5,
+    "station_name": "Shyam park",
+    "distance": 4.5,
+    "line": "Red line"
+  },
+  {
+    "id": 6,
+    "station_number": 6,
+    "station_name": "Major Mohit Sharma",
+    "distance": 5.7,
+    "line": "Red line"
+  },
+  {
+    "id": 7,
+    "station_number": 7,
+    "station_name": "Raj Bagh",
+    "distance": 6.9,
+    "line": "Red line"
+  },
+  {
+    "id": 8,
+    "station_number": 8,
+    "station_name": "Shaheed Nagar",
+    "distance": 8.2,
+    "line": "Red line"
+  },
+  {
+    "id": 9,
+    "station_number": 9,
+    "station_name": "Dilshad Garden",
+    "distance": 9.4,
+    "line": "Red line"
+  },
+  {
+    "id": 10,
+    "station_number": 10,
+    "station_name": "Jhil Mil",
+    "distance": 10.3,
+    "line": "Red line"
+  },
+  {
+    "id": 11,
+    "station_number": 11,
+    "station_name": "Mansarovar Park",
+    "distance": 11.4,
+    "line": "Red line"
+  },
+  {
+    "id": 12,
+    "station_number": 12,
+    "station_name": "Shahdara",
+    "distance": 12.5,
+    "line": "Red line"
+  },
+  {
+    "id": 13,
+    "station_number": 13,
+    "station_name": "Welcome [Conn: Pink]",
+    "distance": 13.7,
+    "line": "Red line"
+  },
+  {
+    "id": 14,
+    "station_number": 14,
+    "station_name": "Seelampur",
+    "distance": 14.8,
+    "line": "Red line"
+  },
+  {
+    "id": 15,
+    "station_number": 15,
+    "station_name": "Shastri Park",
+    "distance": 16.4,
+    "line": "Red line"
+  },
+  {
+    "id": 16,
+    "station_number": 16,
+    "station_name": "Kashmere Gate [Conn: Violet,Yellow]",
+    "distance": 18.5,
+    "line": "Red line"
+  },
+  {
+    "id": 17,
+    "station_number": 17,
+    "station_name": "Tis Hazari",
+    "distance": 19.7,
+    "line": "Red line"
+  },
+  {
+    "id": 18,
+    "station_number": 18,
+    "station_name": "Pul Bangash",
+    "distance": 20.6,
+    "line": "Red line"
+  },
+  {
+    "id": 19,
+    "station_number": 19,
+    "station_name": "Pratap Nagar",
+    "distance": 21.4,
+    "line": "Red line"
+  },
+  {
+    "id": 20,
+    "station_number": 20,
+    "station_name": "Shastri Nagar",
+    "distance": 23.1,
+    "line": "Red line"
+  },
+  {
+    "id": 21,
+    "station_number": 21,
+    "station_name": "Inderlok [Conn: Green]",
+    "distance": 24.3,
+    "line": "Red line"
+  },
+  {
+    "id": 22,
+    "station_number": 22,
+    "station_name": "Kanhaiya Nagar",
+    "distance": 25.5,
+    "line": "Red line"
+  },
+  {
+    "id": 23,
+    "station_number": 23,
+    "station_name": "Keshav Puram",
+    "distance": 26.2,
+    "line": "Red line"
+  },
+  {
+    "id": 24,
+    "station_number": 24,
+    "station_name": "Netaji Subash Place [Conn: Pink]",
+    "distance": 27.4,
+    "line": "Red line"
+  },
+  {
+    "id": 25,
+    "station_number": 25,
+    "station_name": "Kohat Enclave",
+    "distance": 28.6,
+    "line": "Red line"
+  },
+  {
+    "id": 26,
+    "station_number": 26,
+    "station_name": "Pitam Pura",
+    "distance": 29.6,
+    "line": "Red line"
+  },
+  {
+    "id": 27,
+    "station_number": 27,
+    "station_name": "Rohini East",
+    "distance": 30.4,
+    "line": "Red line"
+  },
+  {
+    "id": 28,
+    "station_number": 28,
+    "station_name": "Rohini West",
+    "distance": 31.7,
+    "line": "Red line"
+  },
+  {
+    "id": 29,
+    "station_number": 29,
+    "station_name": "Rithala(last station)",
+    "distance": 32.7,
+    "line": "Red line"
+  },
+  {
+    "id": 30,
+    "station_number": 1,
+    "station_name": "Samaypur Badli(First Station)",
+    "distance": 0.0,
+    "line": "Yellow line"
+  },
+  {
+    "id": 31,
+    "station_number": 2,
+    "station_name": "Rohini Sector 18-19",
+    "distance": 0.8,
+    "line": "Yellow line"
+  },
+  {
+    "id": 32,
+    "station_number": 3,
+    "station_name": "Haiderpur Badli Mor",
+    "distance": 2.1,
+    "line": "Yellow line"
+  },
+  {
+    "id": 33,
+    "station_number": 4,
+    "station_name": "Jahangirpuri",
+    "distance": 3.4,
+    "line": "Yellow line"
+  },
+  {
+    "id": 34,
+    "station_number": 5,
+    "station_name": "Adarsh Nagar",
+    "distance": 4.7,
+    "line": "Yellow line"
+  },
+  {
+    "id": 35,
+    "station_number": 6,
+    "station_name": "Azadpur [Conn: Pink]",
+    "distance": 6.2,
+    "line": "Yellow line"
+  },
+  {
+    "id": 36,
+    "station_number": 7,
+    "station_name": "Model Town",
+    "distance": 7.6,
+    "line": "Yellow line"
+  },
+  {
+    "id": 37,
+    "station_number": 8,
+    "station_name": "Guru Tegh Bahadur Nagar",
+    "distance": 9.0,
+    "line": "Yellow line"
+  },
+  {
+    "id": 38,
+    "station_number": 9,
+    "station_name": "Vishwavidyalaya",
+    "distance": 9.8,
+    "line": "Yellow line"
+  },
+  {
+    "id": 39,
+    "station_number": 10,
+    "station_name": "Vidhan Sabha",
+    "distance": 10.8,
+    "line": "Yellow line"
+  },
+  {
+    "id": 40,
+    "station_number": 11,
+    "station_name": "Civil Lines",
+    "distance": 12.1,
+    "line": "Yellow line"
+  },
+  {
+    "id": 41,
+    "station_number": 12,
+    "station_name": "Kashmere Gate [Conn: Violet]",
+    "distance": 13.2,
+    "line": "Yellow line"
+  },
+  {
+    "id": 42,
+    "station_number": 13,
+    "station_name": "Chandni Chowk",
+    "distance": 14.3,
+    "line": "Yellow line"
+  },
+  {
+    "id": 43,
+    "station_number": 14,
+    "station_name": "Chawri Bazar",
+    "distance": 15.3,
+    "line": "Yellow line"
+  },
+  {
+    "id": 44,
+    "station_number": 15,
+    "station_name": "New Delhi [Conn: Orange]",
+    "distance": 16.1,
+    "line": "Yellow line"
+  },
+  {
+    "id": 45,
+    "station_number": 16,
+    "station_name": "Rajiv Chowk [Conn: Blue]",
+    "distance": 17.2,
+    "line": "Yellow line"
+  },
+  {
+    "id": 46,
+    "station_number": 17,
+    "station_name": "Patel Chowk",
+    "distance": 18.5,
+    "line": "Yellow line"
+  },
+  {
+    "id": 47,
+    "station_number": 18,
+    "station_name": "Central Secretariat [Conn: Violet]",
+    "distance": 19.4,
+    "line": "Yellow line"
+  },
+  {
+    "id": 48,
+    "station_number": 19,
+    "station_name": "Udyog Bhawan",
+    "distance": 19.7,
+    "line": "Yellow line"
+  },
+  {
+    "id": 49,
+    "station_number": 20,
+    "station_name": "Lok Kalyan Marg",
+    "distance": 21.3,
+    "line": "Yellow line"
+  },
+  {
+    "id": 50,
+    "station_number": 21,
+    "station_name": "Jor Bagh",
+    "distance": 22.5,
+    "line": "Yellow line"
+  },
+  {
+    "id": 51,
+    "station_number": 22,
+    "station_name": "Dilli Haat INA [Conn: Pink]",
+    "distance": 23.8,
+    "line": "Yellow line"
+  },
+  {
+    "id": 52,
+    "station_number": 23,
+    "station_name": "AIIMS",
+    "distance": 25.1,
+    "line": "Yellow line"
+  },
+  {
+    "id": 53,
+    "station_number": 24,
+    "station_name": "Green Park",
+    "distance": 26.2,
+    "line": "Yellow line"
+  },
+  {
+    "id": 54,
+    "station_number": 25,
+    "station_name": "Hauz Khas [Conn: Magenta]",
+    "distance": 27.5,
+    "line": "Yellow line"
+  },
+  {
+    "id": 55,
+    "station_number": 26,
+    "station_name": "Malviya Nagar",
+    "distance": 28.8,
+    "line": "Yellow line"
+  },
+  {
+    "id": 56,
+    "station_number": 27,
+    "station_name": "Saket",
+    "distance": 30.2,
+    "line": "Yellow line"
+  },
+  {
+    "id": 57,
+    "station_number": 28,
+    "station_name": "Qutab Minar",
+    "distance": 31.3,
+    "line": "Yellow line"
+  },
+  {
+    "id": 58,
+    "station_number": 29,
+    "station_name": "Chhatarpur",
+    "distance": 32.9,
+    "line": "Yellow line"
+  },
+  {
+    "id": 59,
+    "station_number": 30,
+    "station_name": "Sultanpur",
+    "distance": 34.5,
+    "line": "Yellow line"
+  },
+  {
+    "id": 60,
+    "station_number": 31,
+    "station_name": "Ghitorni",
+    "distance": 36.1,
+    "line": "Yellow line"
+  },
+  {
+    "id": 61,
+    "station_number": 32,
+    "station_name": "Arjangarh",
+    "distance": 37.3,
+    "line": "Yellow line"
+  },
+  {
+    "id": 62,
+    "station_number": 33,
+    "station_name": "Guru Dronacharya",
+    "distance": 38.5,
+    "line": "Yellow line"
+  },
+  {
+    "id": 63,
+    "station_number": 34,
+    "station_name": "Sikanderpur [Conn: Rapid Metro]",
+    "distance": 39.6,
+    "line": "Yellow line"
+  },
+  {
+    "id": 64,
+    "station_number": 35,
+    "station_name": "MG Road",
+    "distance": 40.9,
+    "line": "Yellow line"
+  },
+  {
+    "id": 65,
+    "station_number": 36,
+    "station_name": "IFFCO Chowk",
+    "distance": 42.1,
+    "line": "Yellow line"
+  },
+  {
+    "id": 66,
+    "station_number": 37,
+    "station_name": "Huda City Centre(last station)",
+    "distance": 43.4,
+    "line": "Yellow line"
+  },
+  {
+    "id": 67,
+    "station_number": 1,
+    "station_name": "Noida Electronic City(First Station)",
+    "distance": 0.0,
+    "line": "Blue line"
+  },
+  {
+    "id": 68,
+    "station_number": 2,
+    "station_name": "Noida Sector 62",
+    "distance": 0.5,
+    "line": "Blue line"
+  },
+  {
+    "id": 69,
+    "station_number": 3,
+    "station_name": "Noida Sector 59",
+    "distance": 1.7,
+    "line": "Blue line"
+  },
+  {
+    "id": 70,
+    "station_number": 4,
+    "station_name": "Noida Sector 61",
+    "distance": 2.8,
+    "line": "Blue line"
+  },
+  {
+    "id": 71,
+    "station_number": 5,
+    "station_name": "Noida Sector 52 [Conn: Aqua]",
+    "distance": 3.7,
+    "line": "Blue line"
+  },
+  {
+    "id": 72,
+    "station_number": 6,
+    "station_name": "Noida Sector 34",
+    "distance": 4.8,
+    "line": "Blue line"
+  },
+  {
+    "id": 73,
+    "station_number": 7,
+    "station_name": "Noida City Centre",
+    "distance": 5.9,
+    "line": "Blue line"
+  },
+  {
+    "id": 74,
+    "station_number": 8,
+    "station_name": "Golf Course",
+    "distance": 7.0,
+    "line": "Blue line"
+  },
+  {
+    "id": 75,
+    "station_number": 9,
+    "station_name": "Botanical Garden [Conn: Magenta]",
+    "distance": 8.0,
+    "line": "Blue line"
+  },
+  {
+    "id": 76,
+    "station_number": 10,
+    "station_name": "Noida Sector 18",
+    "distance": 9.3,
+    "line": "Blue line"
+  },
+  {
+    "id": 77,
+    "station_number": 11,
+    "station_name": "Noida Sector 16",
+    "distance": 10.4,
+    "line": "Blue line"
+  },
+  {
+    "id": 78,
+    "station_number": 12,
+    "station_name": "Noida Sector 15",
+    "distance": 11.6,
+    "line": "Blue line"
+  },
+  {
+    "id": 79,
+    "station_number": 13,
+    "station_name": "New Ashok Nagar",
+    "distance": 12.8,
+    "line": "Blue line"
+  },
+  {
+    "id": 80,
+    "station_number": 14,
+    "station_name": "Mayur Vihar Extension",
+    "distance": 13.8,
+    "line": "Blue line"
+  },
+  {
+    "id": 81,
+    "station_number": 15,
+    "station_name": "Mayur Vihar I",
+    "distance": 15.0,
+    "line": "Blue line"
+  },
+  {
+    "id": 82,
+    "station_number": 16,
+    "station_name": "Akshardham",
+    "distance": 16.7,
+    "line": "Blue line"
+  },
+  {
+    "id": 83,
+    "station_number": 17,
+    "station_name": "Yamuna Bank [Conn: Branch]",
+    "distance": 18.0,
+    "line": "Blue line"
+  },
+  {
+    "id": 84,
+    "station_number": 18,
+    "station_name": "Indraprastha",
+    "distance": 20.1,
+    "line": "Blue line"
+  },
+  {
+    "id": 85,
+    "station_number": 19,
+    "station_name": "Pragati Maidan",
+    "distance": 21.3,
+    "line": "Blue line"
+  },
+  {
+    "id": 86,
+    "station_number": 20,
+    "station_name": "Mandi House [Conn: Violet]",
+    "distance": 22.5,
+    "line": "Blue line"
+  },
+  {
+    "id": 87,
+    "station_number": 21,
+    "station_name": "Barakhamba",
+    "distance": 23.5,
+    "line": "Blue line"
+  },
+  {
+    "id": 88,
+    "station_number": 22,
+    "station_name": "Rajiv Chowk [Conn: Yellow]",
+    "distance": 24.4,
+    "line": "Blue line"
+  },
+  {
+    "id": 89,
+    "station_number": 23,
+    "station_name": "RK Ashram Marg",
+    "distance": 25.5,
+    "line": "Blue line"
+  },
+  {
+    "id": 90,
+    "station_number": 24,
+    "station_name": "Jhandewalan",
+    "distance": 26.7,
+    "line": "Blue line"
+  },
+  {
+    "id": 91,
+    "station_number": 25,
+    "station_name": "Karol Bagh",
+    "distance": 27.8,
+    "line": "Blue line"
+  },
+  {
+    "id": 92,
+    "station_number": 26,
+    "station_name": "Rajendra Place",
+    "distance": 29.0,
+    "line": "Blue line"
+  },
+  {
+    "id": 93,
+    "station_number": 27,
+    "station_name": "Patel Nagar",
+    "distance": 30.2,
+    "line": "Blue line"
+  },
+  {
+    "id": 94,
+    "station_number": 28,
+    "station_name": "Shadipur",
+    "distance": 31.5,
+    "line": "Blue line"
+  },
+  {
+    "id": 95,
+    "station_number": 29,
+    "station_name": "Kirti Nagar [Conn: Green]",
+    "distance": 32.5,
+    "line": "Blue line"
+  },
+  {
+    "id": 96,
+    "station_number": 30,
+    "station_name": "Moti Nagar",
+    "distance": 33.4,
+    "line": "Blue line"
+  },
+  {
+    "id": 97,
+    "station_number": 31,
+    "station_name": "Ramesh Nagar",
+    "distance": 34.3,
+    "line": "Blue line"
+  },
+  {
+    "id": 98,
+    "station_number": 32,
+    "station_name": "Rajouri Garden [Conn: Pink]",
+    "distance": 35.4,
+    "line": "Blue line"
+  },
+  {
+    "id": 99,
+    "station_number": 33,
+    "station_name": "Tagore Garden",
+    "distance": 36.7,
+    "line": "Blue line"
+  },
+  {
+    "id": 100,
+    "station_number": 34,
+    "station_name": "Subhash Nagar",
+    "distance": 37.7,
+    "line": "Blue line"
+  },
+  {
+    "id": 101,
+    "station_number": 35,
+    "station_name": "Tilak Nagar",
+    "distance": 38.7,
+    "line": "Blue line"
+  },
+  {
+    "id": 102,
+    "station_number": 36,
+    "station_name": "Janak Puri East",
+    "distance": 39.9,
+    "line": "Blue line"
+  },
+  {
+    "id": 103,
+    "station_number": 37,
+    "station_name": "JanakPuri West [Conn: Magenta]",
+    "distance": 40.8,
+    "line": "Blue line"
+  },
+  {
+    "id": 104,
+    "station_number": 38,
+    "station_name": "Uttam Nagar East",
+    "distance": 42.0,
+    "line": "Blue line"
+  },
+  {
+    "id": 105,
+    "station_number": 39,
+    "station_name": "Uttam Nagar West",
+    "distance": 43.0,
+    "line": "Blue line"
+  },
+  {
+    "id": 106,
+    "station_number": 40,
+    "station_name": "Nawada",
+    "distance": 44.2,
+    "line": "Blue line"
+  },
+  {
+    "id": 107,
+    "station_number": 41,
+    "station_name": "Dwarka Mor",
+    "distance": 45.4,
+    "line": "Blue line"
+  },
+  {
+    "id": 108,
+    "station_number": 42,
+    "station_name": "Dwarka",
+    "distance": 46.5,
+    "line": "Blue line"
+  },
+  {
+    "id": 109,
+    "station_number": 43,
+    "station_name": "Dwarka Sector 14",
+    "distance": 47.4,
+    "line": "Blue line"
+  },
+  {
+    "id": 110,
+    "station_number": 44,
+    "station_name": "Dwarka Sector 13",
+    "distance": 48.3,
+    "line": "Blue line"
+  },
+  {
+    "id": 111,
+    "station_number": 45,
+    "station_name": "Dwarka Sector 12",
+    "distance": 49.3,
+    "line": "Blue line"
+  },
+  {
+    "id": 112,
+    "station_number": 46,
+    "station_name": "Dwarka Sector 11",
+    "distance": 50.3,
+    "line": "Blue line"
+  },
+  {
+    "id": 113,
+    "station_number": 47,
+    "station_name": "Dwarka Sector 10",
+    "distance": 51.2,
+    "line": "Blue line"
+  },
+  {
+    "id": 114,
+    "station_number": 48,
+    "station_name": "Dwarka Sector 9",
+    "distance": 52.1,
+    "line": "Blue line"
+  },
+  {
+    "id": 115,
+    "station_number": 49,
+    "station_name": "Dwarka Sector 8",
+    "distance": 52.9,
+    "line": "Blue line"
+  },
+  {
+    "id": 116,
+    "station_number": 50,
+    "station_name": "Dwarka Sector 21(last station) [Conn: Airport Express]",
+    "distance": 55.4,
+    "line": "Blue line"
+  },
+  {
+    "id": 117,
+    "station_number": 1,
+    "station_name": "Yamuna Bank(First Station)",
+    "distance": 0.0,
+    "line": "Blue Branch line"
+  },
+  {
+    "id": 118,
+    "station_number": 2,
+    "station_name": "Laxmi Nagar",
+    "distance": 1.1,
+    "line": "Blue Branch line"
+  },
+  {
+    "id": 119,
+    "station_number": 3,
+    "station_name": "Nirman Vihar",
+    "distance": 2.1,
+    "line": "Blue Branch line"
+  },
+  {
+    "id": 120,
+    "station_number": 4,
+    "station_name": "Preet Vihar",
+    "distance": 3.2,
+    "line": "Blue Branch line"
+  },
+  {
+    "id": 121,
+    "station_number": 5,
+    "station_name": "Karkarduma",
+    "distance": 4.4,
+    "line": "Blue Branch line"
+  },
+  {
+    "id": 122,
+    "station_number": 6,
+    "station_name": "Anand Vihar [Conn: Pink]",
+    "distance": 5.5,
+    "line": "Blue Branch line"
+  },
+  {
+    "id": 123,
+    "station_number": 7,
+    "station_name": "Kaushambi",
+    "distance": 7.1,
+    "line": "Blue Branch line"
+  },
+  {
+    "id": 124,
+    "station_number": 8,
+    "station_name": "Vaishali(last station)",
+    "distance": 8.5,
+    "line": "Blue Branch line"
+  },
+  {
+    "id": 125,
+    "station_number": 1,
+    "station_name": "Dwarka Sector 21(First Station) [Conn: Blue]",
+    "distance": 0.0,
+    "line": "Orange line"
+  },
+  {
+    "id": 126,
+    "station_number": 2,
+    "station_name": "Delhi Aerocity",
+    "distance": 3.0,
+    "line": "Orange line"
+  },
+  {
+    "id": 127,
+    "station_number": 3,
+    "station_name": "IGI Airport",
+    "distance": 5.2,
+    "line": "Orange line"
+  },
+  {
+    "id": 128,
+    "station_number": 4,
+    "station_name": "Dwarka Sector 21(First Station) [Conn: Blue]",
+    "distance": 0.0,
+    "line": "Orange line"
+  },
+  {
+    "id": 129,
+    "station_number": 2,
+    "station_name": "Delhi Aerocity",
+    "distance": 3.0,
+    "line": "Orange line"
+  },
+  {
+    "id": 130,
+    "station_number": 3,
+    "station_name": "IGI Airport",
+    "distance": 5.2,
+    "line": "Orange line"
+  },
+  {
+    "id": 131,
+    "station_number": 4,
+    "station_name": "Dwarka Sector 21(First Station) [Conn: Blue]",
+    "distance": 0.0,
+    "line": "Orange line"
+  },
+  {
+    "id": 132,
+    "station_number": 2,
+    "station_name": "Delhi Aerocity",
+    "distance": 3.0,
+    "line": "Orange line"
+  },
+  {
+    "id": 133,
+    "station_number": 3,
+    "station_name": "IGI Airport",
+    "distance": 5.2,
+    "line": "Orange line"
+  },
+  {
+    "id": 134,
+    "station_number": 4,
+    "station_name": "Dwarka Sector 21(First Station) [Conn: Blue]",
+    "distance": 0.0,
+    "line": "Orange line"
+  },
+  {
+    "id": 135,
+    "station_number": 2,
+    "station_name": "Delhi Aerocity",
+    "distance": 3.0,
+    "line": "Orange line"
+  },
+  {
+    "id": 136,
+    "station_number": 3,
+    "station_name": "IGI Airport",
+    "distance": 5.2,
+    "line": "Orange line"
+  },
+  {
+    "id": 137,
+    "station_number": 4,
+    "station_name": "Dwarka Sector 21(First Station) [Conn: Blue]",
+    "distance": 0.0,
+    "line": "Orange line"
+  },
+  {
+    "id": 138,
+    "station_number": 2,
+    "station_name": "Delhi Aerocity",
+    "distance": 3.0,
+    "line": "Orange line"
+  },
+  {
+    "id": 139,
+    "station_number": 3,
+    "station_name": "IGI Airport",
+    "distance": 5.2,
+    "line": "Orange line"
+  },
+  {
+    "id": 140,
+    "station_number": 4,
+    "station_name": "Dwarka Sector 21(First Station) [Conn: Blue]",
+    "distance": 0.0,
+    "line": "Orange line"
+  },
+  {
+    "id": 141,
+    "station_number": 2,
+    "station_name": "Delhi Aerocity",
+    "distance": 3.0,
+    "line": "Orange line"
+  },
+  {
+    "id": 142,
+    "station_number": 3,
+    "station_name": "IGI Airport",
+    "distance": 5.2,
+    "line": "Orange line"
+  },
+  {
+    "id": 143,
+    "station_number": 4,
+    "station_name": "Dwarka Sector 21(First Station) [Conn: Blue]",
+    "distance": 0.0,
+    "line": "Orange line"
+  },
+  {
+    "id": 144,
+    "station_number": 2,
+    "station_name": "Delhi Aerocity",
+    "distance": 3.0,
+    "line": "Orange line"
+  },
+  {
+    "id": 145,
+    "station_number": 3,
+    "station_name": "IGI Airport",
+    "distance": 5.2,
+    "line": "Orange line"
+  },
+  {
+    "id": 146,
+    "station_number": 4,
+    "station_name": "Dwarka Sector 21(First Station) [Conn: Blue]",
+    "distance": 0.0,
+    "line": "Orange line"
+  },
+  {
+    "id": 147,
+    "station_number": 2,
+    "station_name": "Delhi Aerocity",
+    "distance": 3.0,
+    "line": "Orange line"
+  },
+  {
+    "id": 148,
+    "station_number": 3,
+    "station_name": "IGI Airport",
+    "distance": 5.2,
+    "line": "Orange line"
+  },
+  {
+    "id": 149,
+    "station_number": 4,
+    "station_name": "New Delhi(last station) [Conn: Yellow]",
+    "distance": 18.7,
+    "line": "Orange line"
+  },
+  {
+    "id": 150,
+    "station_number": 1,
+    "station_name": "Majlis Park(First Station)",
+    "distance": 0.0,
+    "line": "Pink line"
+  },
+  {
+    "id": 151,
+    "station_number": 2,
+    "station_name": "Azadpur [Conn: Yellow]",
+    "distance": 3.2,
+    "line": "Pink line"
+  },
+  {
+    "id": 152,
+    "station_number": 3,
+    "station_name": "Shalimar Bagh",
+    "distance": 4.8,
+    "line": "Pink line"
+  },
+  {
+    "id": 153,
+    "station_number": 4,
+    "station_name": "Netaji Subhash Place [Conn: Red]",
+    "distance": 7.7,
+    "line": "Pink line"
+  },
+  {
+    "id": 154,
+    "station_number": 5,
+    "station_name": "Shakurpur",
+    "distance": 9.1,
+    "line": "Pink line"
+  },
+  {
+    "id": 155,
+    "station_number": 6,
+    "station_name": "Punjabi Bagh West",
+    "distance": 10.8,
+    "line": "Pink line"
+  },
+  {
+    "id": 156,
+    "station_number": 7,
+    "station_name": "ESI Hospital",
+    "distance": 12.2,
+    "line": "Pink line"
+  },
+  {
+    "id": 157,
+    "station_number": 8,
+    "station_name": "Rajouri Garden [Conn: Blue]",
+    "distance": 14.0,
+    "line": "Pink line"
+  },
+  {
+    "id": 158,
+    "station_number": 9,
+    "station_name": "Mayapuri",
+    "distance": 15.1,
+    "line": "Pink line"
+  },
+  {
+    "id": 159,
+    "station_number": 10,
+    "station_name": "Naraina Vihar",
+    "distance": 16.3,
+    "line": "Pink line"
+  },
+  {
+    "id": 160,
+    "station_number": 11,
+    "station_name": "Delhi Cantt",
+    "distance": 17.8,
+    "line": "Pink line"
+  },
+  {
+    "id": 161,
+    "station_number": 12,
+    "station_name": "Durgabai Deshmukh South Campus [Conn: Orange]",
+    "distance": 19.2,
+    "line": "Pink line"
+  },
+  {
+    "id": 162,
+    "station_number": 13,
+    "station_name": "Sir Vishweshwaraiah Moti Bagh",
+    "distance": 20.5,
+    "line": "Pink line"
+  },
+  {
+    "id": 163,
+    "station_number": 14,
+    "station_name": "Bhikaji Cama Place",
+    "distance": 21.6,
+    "line": "Pink line"
+  },
+  {
+    "id": 164,
+    "station_number": 15,
+    "station_name": "Sarojini Nagar",
+    "distance": 22.8,
+    "line": "Pink line"
+  },
+  {
+    "id": 165,
+    "station_number": 16,
+    "station_name": "INA [Conn: Yellow]",
+    "distance": 24.1,
+    "line": "Pink line"
+  },
+  {
+    "id": 166,
+    "station_number": 17,
+    "station_name": "South Extension",
+    "distance": 25.6,
+    "line": "Pink line"
+  },
+  {
+    "id": 167,
+    "station_number": 18,
+    "station_name": "Lajpat Nagar [Conn: Violet]",
+    "distance": 27.2,
+    "line": "Pink line"
+  },
+  {
+    "id": 168,
+    "station_number": 19,
+    "station_name": "Vinobapuri",
+    "distance": 28.6,
+    "line": "Pink line"
+  },
+  {
+    "id": 169,
+    "station_number": 20,
+    "station_name": "Ashram",
+    "distance": 29.5,
+    "line": "Pink line"
+  },
+  {
+    "id": 170,
+    "station_number": 21,
+    "station_name": "Sarai Kale Khan Nizamuddin",
+    "distance": 31.4,
+    "line": "Pink line"
+  },
+  {
+    "id": 171,
+    "station_number": 22,
+    "station_name": "Mayur Vihar I [Conn: Blue]",
+    "distance": 33.0,
+    "line": "Pink line"
+  },
+  {
+    "id": 172,
+    "station_number": 23,
+    "station_name": "Mayur Vihar Pocket I",
+    "distance": 34.4,
+    "line": "Pink line"
+  },
+  {
+    "id": 173,
+    "station_number": 24,
+    "station_name": "Trilokpuri Sanjay Lake",
+    "distance": 35.9,
+    "line": "Pink line"
+  },
+  {
+    "id": 174,
+    "station_number": 25,
+    "station_name": "East Vinod Nagar Mayur Vihar II",
+    "distance": 37.0,
+    "line": "Pink line"
+  },
+  {
+    "id": 175,
+    "station_number": 26,
+    "station_name": "Mandawali West Vinod Nagar",
+    "distance": 38.1,
+    "line": "Pink line"
+  },
+  {
+    "id": 176,
+    "station_number": 27,
+    "station_name": "IP Extension",
+    "distance": 39.0,
+    "line": "Pink line"
+  },
+  {
+    "id": 177,
+    "station_number": 28,
+    "station_name": "Anand Vihar [Conn: Blue]",
+    "distance": 40.1,
+    "line": "Pink line"
+  },
+  {
+    "id": 178,
+    "station_number": 29,
+    "station_name": "Karkarduma [Conn: Blue]",
+    "distance": 41.2,
+    "line": "Pink line"
+  },
+  {
+    "id": 179,
+    "station_number": 30,
+    "station_name": "Karkarduma Court",
+    "distance": 42.3,
+    "line": "Pink line"
+  },
+  {
+    "id": 180,
+    "station_number": 31,
+    "station_name": "Krishna Nagar",
+    "distance": 43.3,
+    "line": "Pink line"
+  },
+  {
+    "id": 181,
+    "station_number": 32,
+    "station_name": "East Azad Nagar",
+    "distance": 44.5,
+    "line": "Pink line"
+  },
+  {
+    "id": 182,
+    "station_number": 33,
+    "station_name": "Welcome [Conn: Red]",
+    "distance": 46.0,
+    "line": "Pink line"
+  },
+  {
+    "id": 183,
+    "station_number": 34,
+    "station_name": "Jafrabad",
+    "distance": 47.1,
+    "line": "Pink line"
+  },
+  {
+    "id": 184,
+    "station_number": 35,
+    "station_name": "Maujpur Babarpur",
+    "distance": 48.2,
+    "line": "Pink line"
+  },
+  {
+    "id": 185,
+    "station_number": 36,
+    "station_name": "Gokulpuri",
+    "distance": 50.0,
+    "line": "Pink line"
+  },
+  {
+    "id": 186,
+    "station_number": 37,
+    "station_name": "Johri Enclave",
+    "distance": 51.3,
+    "line": "Pink line"
+  },
+  {
+    "id": 187,
+    "station_number": 38,
+    "station_name": "Shiv Vihar(last station)",
+    "distance": 52.7,
+    "line": "Pink line"
+  },
+  {
+    "id": 188,
+    "station_number": 1,
+    "station_name": "Dwarka(First Station)",
+    "distance": 0.0,
+    "line": "Magenta line"
+  },
+  {
+    "id": 189,
+    "station_number": 2,
+    "station_name": "Nangli",
+    "distance": 1.4,
+    "line": "Magenta line"
+  },
+  {
+    "id": 190,
+    "station_number": 3,
+    "station_name": "Najafgarh(last station)",
+    "distance": 2.7,
+    "line": "Magenta line"
+  },
+  {
+    "id": 191,
+    "station_number": 1,
+    "station_name": "Botanical Garden(First Station) [Conn: Blue]",
+    "distance": 0.0,
+    "line": "Magenta line"
+  },
+  {
+    "id": 192,
+    "station_number": 2,
+    "station_name": "Okhla Bird Sanctuary",
+    "distance": 1.5,
+    "line": "Magenta line"
+  },
+  {
+    "id": 193,
+    "station_number": 3,
+    "station_name": "Kalindi Kunj",
+    "distance": 2.8,
+    "line": "Magenta line"
+  },
+  {
+    "id": 194,
+    "station_number": 4,
+    "station_name": "Jasola Vihar Shaheen Bagh",
+    "distance": 4.2,
+    "line": "Magenta line"
+  },
+  {
+    "id": 195,
+    "station_number": 5,
+    "station_name": "Okhla Vihar",
+    "distance": 5.3,
+    "line": "Magenta line"
+  },
+  {
+    "id": 196,
+    "station_number": 6,
+    "station_name": "Jamia Millia Islamia",
+    "distance": 6.5,
+    "line": "Magenta line"
+  },
+  {
+    "id": 197,
+    "station_number": 7,
+    "station_name": "Sukhdev Vihar",
+    "distance": 7.7,
+    "line": "Magenta line"
+  },
+  {
+    "id": 198,
+    "station_number": 8,
+    "station_name": "Okhla NSIC",
+    "distance": 9.0,
+    "line": "Magenta line"
+  },
+  {
+    "id": 199,
+    "station_number": 9,
+    "station_name": "Kalkaji Mandir [Conn: Violet]",
+    "distance": 10.6,
+    "line": "Magenta line"
+  },
+  {
+    "id": 200,
+    "station_number": 10,
+    "station_name": "Nehru Enclave",
+    "distance": 11.6,
+    "line": "Magenta line"
+  },
+  {
+    "id": 201,
+    "station_number": 11,
+    "station_name": "Greater Kailash",
+    "distance": 12.4,
+    "line": "Magenta line"
+  },
+  {
+    "id": 202,
+    "station_number": 12,
+    "station_name": "Chirag Delhi",
+    "distance": 13.3,
+    "line": "Magenta line"
+  }
+]

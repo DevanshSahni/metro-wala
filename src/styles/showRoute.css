@@ -1,0 +1,242 @@
+.showRouteWrapper {
+  background-image: linear-gradient(#919090, #9190901a, #c4c4c4);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.routeContainer {
+  max-width: 460px;
+  width: 100%;
+  min-height: 100vh;
+  padding: 70px 24px 20px;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Route Summary */
+.routeSummary {
+  width: 100%;
+  height: 146px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 14px;
+  border: 1.2px solid #e6e6e6;
+  background-color: #ffffff;
+}
+
+.routeSummaryStation {
+  margin: 20px 10px 0;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.routeSummaryStationIcon {
+  color: #888888;
+  font-size: 12px;
+}
+
+.routeSummaryStationElement {
+  display: flex;
+  gap: 5px;
+  width: 45%;
+  max-width: fit-content;
+  color: #222222;
+}
+.routeSummaryStationElementIcon {
+  min-width: max-content;
+  font-size: 11px;
+  margin-top: 5px;
+}
+.routeSummaryStationElementTime {
+  color: #888888;
+  margin-top: 5px;
+}
+
+.routeSummaryFooter {
+  width: 100%;
+  height: 55px;
+  background-color: rgba(55, 201, 118, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 12px;
+  border-radius: 0 0 14px 14px;
+}
+.routeSummaryFooterElement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  color: #222222;
+}
+.routeSummaryFooterElement b {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.routeSummaryFooterIcon {
+  width: 16px;
+  color: #37c976;
+}
+
+/* Route tab */
+
+.routeTab {
+  width: 100%;
+  background-color: #e6e6e6;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.routeTabButton {
+  all: unset;
+  display: inline-block;
+  height: 46px;
+  width: 49%;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  background-color: inherit;
+  color: #000000;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.activeRouteTabButton {
+  background-color: #37c976;
+  color: #ffffff;
+}
+
+/* Route description */
+.routeDescription {
+  margin-top: 15px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 14px;
+}
+
+.routeDescriptionSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 0 0 0 20px;
+  position: relative;
+  margin: 28px 20px;
+  border-left: 3.5px dashed;
+}
+
+.routeDescriptionSectionIcon {
+  position: absolute;
+  left: -6.25px;
+  font-size: 9px;
+}
+
+.routeDescriptionSectionStation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.routeDescriptionSectionStation span {
+  color: #222222;
+  width: 210px;
+}
+
+.routeDescriptionSectionStationPlatform {
+  color: #888888;
+  margin-top: 3px;
+}
+
+.routeDescriptionSectionStationTowards {
+  font-weight: 500;
+  width: 110px;
+  text-align: right;
+  color: #888888;
+}
+
+.routeDescriptionSectionIntermediate {
+  color: #37c976;
+  cursor: pointer;
+}
+.routeDescriptionSectionIntermediate li {
+  list-style-type: none;
+  color: #444444;
+  padding: 0 0 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.routeDescriptionTransition {
+  width: 100%;
+  height: 55px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #222222;
+  padding: 0 18px;
+}
+
+.routeDescriptionTransitionIcon {
+  color: #37c976;
+}
+
+.routeSwapButton {
+  border: 1px solid #37c976;
+  border-radius: 140px;
+  padding: 13px 23px;
+  background-color: #ffffff;
+  color: #37c976;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+@media only screen and (max-width: 500px) {
+  .routeContainer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Route Summary */
+  .routeSummaryStationIcon {
+    width: 10px;
+  }
+  .routeSummaryStationElementIcon {
+    font-size: 9px;
+  }
+  .routeSummaryFooterElement {
+    gap: 4px;
+  }
+  .routeSummaryFooterIcon {
+    width: 14px;
+  }
+
+  /* Route description */
+  .routeDescriptionSectionIntermediate li {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .routeSwapButton {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 10px 20px;
+    border-radius: 120px;
+  }
+}

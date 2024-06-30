@@ -7,7 +7,7 @@
 }
 
 .routeContainer {
-  max-width: 460px;
+  max-width: 480px;
   width: 100%;
   min-height: 100vh;
   padding: 70px 24px 20px;
@@ -158,7 +158,7 @@
 
 .routeDescriptionSectionStationTowards {
   font-weight: 500;
-  width: 110px;
+  width: 120px;
   text-align: right;
   color: #888888;
 }

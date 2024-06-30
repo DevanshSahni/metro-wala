@@ -5,7 +5,8 @@ import { useNavigate } from "react-router-dom";
 import { MdOutlineMic } from "react-icons/md";
 import { IoIosSwap } from "react-icons/io";
 import { FaCircle } from "react-icons/fa";
-import data from "../assets/data/stations.json";
+import metroData from "../assets/data/stations.json";
+import colorCode from "../assets/data/colorCode.json";
 
 const PlanJourney = () => {
   const [origin, setOrigin] = useState("");
@@ -24,7 +25,9 @@ const PlanJourney = () => {
       console.log("Kindly select origin and destination first");
       return;
     }
-    navigate(`/route/${origin}/${destination}`);
+    navigate(
+      `/route/${originData.station_code}/${destinationData.station_code}`
+    );
   };
 
   const handleStationSwap = () => {
@@ -35,6 +38,16 @@ const PlanJourney = () => {
     setDestinationData(originData);
     setOriginData(tempData);
   };
+
+  useEffect(() => {
+    setOriginData(metroData.find((entry) => entry.station_name === origin));
+  }, [origin]);
+
+  useEffect(() => {
+    setDestinationData(
+      metroData.find((entry) => entry.station_name === destination)
+    );
+  }, [destination]);
 
   return (
     <>
@@ -52,7 +65,7 @@ const PlanJourney = () => {
               {originData && (
                 <FaCircle
                   style={{
-                    color: `${originData.line.split(" ")[0]}`,
+                    color: `${colorCode[originData.metro_line]}`,
                     fontSize: "9px",
                   }}
                 />
@@ -70,14 +83,13 @@ const PlanJourney = () => {
 
             <MdOutlineMic className="planJourneyInputIcon" />
 
-            {
+            {originFocus && (
               <PlanJourneyDropdown
                 station={origin}
                 setStation={setOrigin}
                 setStationData={setOriginData}
-                stationFocus={originFocus}
               />
-            }
+            )}
           </label>
 
           <button
@@ -94,7 +106,7 @@ const PlanJourney = () => {
               {destinationData && (
                 <FaCircle
                   style={{
-                    color: `${destinationData.line.split(" ")[0]}`,
+                    color: `${colorCode[destinationData.metro_line]}`,
                     fontSize: "9px",
                   }}
                 />
@@ -112,14 +124,13 @@ const PlanJourney = () => {
 
             <MdOutlineMic className="planJourneyInputIcon" />
 
-            {
+            {destinationFocus && (
               <PlanJourneyDropdown
                 station={destination}
                 setStation={setDestination}
                 setStationData={setDestinationData}
-                stationFocus={destinationFocus}
               />
-            }
+            )}
           </label>
         </div>
 
@@ -135,39 +146,35 @@ const PlanJourney = () => {
   );
 };
 
-const PlanJourneyDropdown = ({
-  station,
-  setStation,
-  setStationData,
-  stationFocus,
-}) => {
-  const [stationsCopy, setStationsCopy] = useState(data);
+const PlanJourneyDropdown = ({ station, setStation }) => {
+  const [stationsCopy, setStationsCopy] = useState(metroData);
 
   useEffect(() => {
-    setStationData(data.find((entry) => entry.station_name === station));
-
     setStationsCopy(
-      data.filter((entry) =>
+      metroData.filter((entry) =>
         entry.station_name.toLowerCase().includes(station.toLowerCase())
       )
     );
-  }, [station, setStationData]);
+  }, [station]);
 
   return (
     <>
-      {stationFocus && (
+      {
         <ul className="planJourneyDropdown">
           {stationsCopy?.length ? (
-            stationsCopy.map((station, idx) => {
+            stationsCopy.map((metroStation, idx) => {
               return (
-                <li key={idx} onClick={() => setStation(station.station_name)}>
+                <li
+                  key={idx}
+                  onClick={() => setStation(metroStation.station_name)}
+                >
                   <FaCircle
                     style={{
-                      color: `${station.line.split(" ")[0]}`,
+                      color: `${colorCode[metroStation.metro_line]}`,
                       fontSize: "9px",
                     }}
                   />
-                  {station.station_name}
+                  {metroStation.station_name}
                 </li>
               );
             })
@@ -175,7 +182,7 @@ const PlanJourneyDropdown = ({
             <li>No matching stations found</li>
           )}
         </ul>
-      )}
+      }
     </>
   );
 };

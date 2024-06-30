@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "../styles/showRoute.css";
 import dmrc from "../assets/images/icon_dmrc.png";
@@ -13,21 +13,66 @@ import {
 import stations from "../assets/data/stations.json";
 import { IoFootsteps } from "react-icons/io5";
 import { IoIosSwap } from "react-icons/io";
+import colorCode from "../assets/data/colorCode.json";
 
 const ShowRoute = () => {
-  const { origin } = useParams();
-  const { destination } = useParams();
+  const { originCode } = useParams();
+  const { destinationCode } = useParams();
   const [shortestRoute, setShortestRoute] = useState(true);
+  const [routeInfo, setRouteInfo] = useState("");
   const navigate = useNavigate();
-  const intermediateStations = ["Station ABC", "Dwarka", "Hauz khas"];
 
-  const originColor = stations
-    .find((station) => station.station_name === origin)
-    .line.split(" ")[0];
+  useEffect(() => {
+    const getRoute = async () => {
+      const response = await fetch(
+        `https://backend.delhimetrorail.com/api/v2/en/station_route/${originCode}/${destinationCode}/${
+          shortestRoute ? "least-distance" : "minimum-interchange"
+        }/${new Date().toISOString().slice(0, 23)}`
+      );
+      const data = await response.json();
+      setRouteInfo(data);
+      console.log(data);
+    };
+    getRoute();
+  }, [shortestRoute, originCode, destinationCode]);
 
-  const destinationColor = stations
-    .find((station) => station.station_name === destination)
-    .line.split(" ")[0];
+  const originData = stations.find(
+    (station) => station.station_code === originCode
+  );
+
+  const destinationData = stations.find(
+    (station) => station.station_code === destinationCode
+  );
+
+  const convertIntoMinutes = (time) => {
+    if (!time) return 0;
+    const [hoursStr, minutesStr] = time.split(":");
+
+    const hours = parseInt(hoursStr, 10);
+    const minutes = parseInt(minutesStr, 10);
+
+    return hours * 60 + minutes;
+  };
+
+  const formattedTime = (mins) => {
+    const now = new Date();
+
+    now.setMinutes(now.getMinutes() + mins);
+
+    let hours = now.getHours();
+    const minutes = now.getMinutes();
+
+    const period = hours >= 12 ? "pm" : "am";
+
+    hours = hours % 12;
+    hours = hours ? hours : 12;
+
+    const time = `${hours.toString().padStart(2, "0")}:${minutes
+      .toString()
+      .padStart(2, "0")} ${period}`;
+
+    return time;
+  };
 
   return (
     <div className="showRouteWrapper">
@@ -37,11 +82,13 @@ const ShowRoute = () => {
             <div className="routeSummaryStationElement">
               <FaCircle
                 className="routeSummaryStationElementIcon"
-                style={{ color: originColor }}
+                style={{ color: colorCode[originData.metro_line] }}
               />
               <span>
-                <h3>{origin}</h3>
-                <h5 className="routeSummaryStationElementTime">09:30 am</h5>
+                <h3>{originData.station_name}</h3>
+                <h5 className="routeSummaryStationElementTime">
+                  {formattedTime(0)}
+                </h5>
               </span>
             </div>
 
@@ -50,11 +97,13 @@ const ShowRoute = () => {
             <div className="routeSummaryStationElement">
               <FaCircle
                 className="routeSummaryStationElementIcon"
-                style={{ color: destinationColor }}
+                style={{ color: colorCode[destinationData.metro_line] }}
               />
               <span>
-                <h3>{destination}</h3>
-                <h5 className="routeSummaryStationElementTime">10:20 am</h5>
+                <h3>{destinationData.station_name}</h3>
+                <h5 className="routeSummaryStationElementTime">
+                  {formattedTime(convertIntoMinutes(routeInfo.total_time))}
+                </h5>
               </span>
             </div>
           </div>
@@ -65,7 +114,7 @@ const ShowRoute = () => {
                 src={dmrc}
                 alt="DMRC icon"
               />
-              Stations<b>12</b>
+              Stations<b>{routeInfo.stations}</b>
             </h4>
             <h4 className="routeSummaryFooterElement">
               <img
@@ -73,14 +122,14 @@ const ShowRoute = () => {
                 src={timer}
                 alt="Timer icon"
               />
-              Time<b>28 mins</b>
+              Time<b>{convertIntoMinutes(routeInfo.total_time)} mins</b>
             </h4>
             <h4 className="routeSummaryFooterElement">
               <FaIndianRupeeSign className="routeSummaryFooterIcon" />
               Fare
               <b>
                 <FaIndianRupeeSign />
-                104
+                {routeInfo.fare}
               </b>
             </h4>
           </div>
@@ -108,33 +157,15 @@ const ShowRoute = () => {
         </div>
 
         <main className="routeDescription">
-          <StationRoute
-            stationColor={originColor}
-            station={origin}
-            intermediateStations={intermediateStations}
-          />
-
-          <div className="routeDescriptionTransition">
-            <h4>
-              Change here to <b>Blue line</b>
-            </h4>
-            <h4>
-              <IoFootsteps className="routeDescriptionTransitionIcon" /> Walk
-              <b> 5 mins</b>
-            </h4>
-          </div>
-
-          <StationRoute
-            stationColor={destinationColor}
-            station={destination}
-            intermediateStations={intermediateStations}
-          />
+          {routeInfo?.route?.map((routeElement, idx) => (
+            <StationRoute key={idx} route={routeElement} />
+          ))}
         </main>
 
         <button
           type="button"
           className="routeSwapButton"
-          onClick={() => navigate(`/route/${destination}/${origin}`)}
+          onClick={() => navigate(`/route/${destinationCode}/${originCode}`)}
         >
           View Return Journey <IoIosSwap />
         </button>
@@ -143,70 +174,93 @@ const ShowRoute = () => {
   );
 };
 
-const StationRoute = ({ stationColor, station, intermediateStations }) => {
+const StationRoute = ({ route }) => {
   const [showIntermediate, setShowIntermediate] = useState(false);
-
+  const toTitleCase = (str) => {
+    return str.toLowerCase().replace(/\b\w/g, (char) => {
+      return char.toUpperCase();
+    });
+  };
   return (
-    <div
-      className="routeDescriptionSection"
-      style={{ borderColor: stationColor }}
-    >
-      <FaCircle
-        className="routeDescriptionSectionIcon"
-        style={{
-          color: stationColor,
-          top: "-1px",
-        }}
-      />
-      <FaCircle
-        className="routeDescriptionSectionIcon"
-        style={{
-          color: stationColor,
-          bottom: "-1px",
-        }}
-      />
+    <>
+      {!!route.station_interchange_time && (
+        <div className="routeDescriptionTransition">
+          <h4>
+            Change here to <b>{route.line}</b>
+          </h4>
+          <h4>
+            <IoFootsteps className="routeDescriptionTransitionIcon" /> Walk
+            <b> {route?.station_interchange_time} mins</b>
+          </h4>
+        </div>
+      )}
 
-      <div className="routeDescriptionSectionStation">
-        <span>
-          <h3>{station}</h3>
-          <h5 className="routeDescriptionSectionStationPlatform">
-            Platform No. 2
-          </h5>
-        </span>
-        <h5 className="routeDescriptionSectionStationTowards">
-          Towards <br /> Samaypur Badli
-        </h5>
-      </div>
+      <div
+        className="routeDescriptionSection"
+        style={{ borderColor: colorCode[route.line] }}
+      >
+        <FaCircle
+          className="routeDescriptionSectionIcon"
+          style={{
+            color: colorCode[route.line],
+            top: "-1px",
+          }}
+        />
+        <FaCircle
+          className="routeDescriptionSectionIcon"
+          style={{
+            color: colorCode[route.line],
+            bottom: "-1px",
+          }}
+        />
 
-      <div className="routeDescriptionSectionIntermediate">
-        {showIntermediate ? (
-          <>
-            {intermediateStations.map((station) => (
-              <li>{station}</li>
-            ))}
-
-            <h5 onClick={() => setShowIntermediate(!showIntermediate)}>
-              Hide {intermediateStations?.length} stations <FaCaretUp />
+        <div className="routeDescriptionSectionStation">
+          <span>
+            <h3>{toTitleCase(route.start)}</h3>
+            <h5 className="routeDescriptionSectionStationPlatform">
+              {route.platform_name}
             </h5>
-          </>
-        ) : (
-          intermediateStations && (
-            <h5 onClick={() => setShowIntermediate(!showIntermediate)}>
-              Show all {intermediateStations?.length} stations <FaCaretDown />
-            </h5>
-          )
-        )}
-      </div>
-
-      <div className="routeDescriptionSectionStation">
-        <span>
-          <h3>Rajiv Chowk</h3>
-          <h5 className="routeDescriptionSectionStationPlatform">
-            Platform No. 1
+          </span>
+          <h5 className="routeDescriptionSectionStationTowards">
+            Towards <br /> {toTitleCase(route.towards_station)}
           </h5>
-        </span>
+        </div>
+
+        <div className="routeDescriptionSectionIntermediate">
+          {showIntermediate ? (
+            <>
+              {route.path.map(
+                (station, idx) =>
+                  idx !== 0 &&
+                  idx !== route.path?.length - 1 && (
+                    <li key={idx}>{toTitleCase(station.name)}</li>
+                  )
+              )}
+
+              <h5 onClick={() => setShowIntermediate(!showIntermediate)}>
+                Hide {route.path?.length - 2} stations <FaCaretUp />
+              </h5>
+            </>
+          ) : (
+            route.path && (
+              <h5 onClick={() => setShowIntermediate(!showIntermediate)}>
+                Show all {route.path?.length} stations <FaCaretDown />
+              </h5>
+            )
+          )}
+        </div>
+
+        <div className="routeDescriptionSectionStation">
+          <span>
+            <h3>{toTitleCase(route.end)}</h3>
+
+            {/* <h5 className="routeDescriptionSectionStationPlatform">
+              Platform No. 1
+            </h5> */}
+          </span>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

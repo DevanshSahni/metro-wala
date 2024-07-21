@@ -691,12 +691,6 @@
     "metro_line": "Blue Line",
     "station_code": "SSTN"
   },
-  {
-    "id": "287",
-    "station_name": "Noida Electronic City",
-    "metro_line": "Blue Line",
-    "station_code": "NECC"
-  },
 
   {
     "id": "116",
@@ -1545,70 +1539,77 @@
   },
 
   {
-    "id": "277",
+    "id": "256",
     "station_name": "Dwarka",
     "metro_line": "Grey Line",
     "station_code": "DW"
   },
   {
-    "id": "278",
+    "id": "257",
     "station_name": "Nangli",
     "metro_line": "Grey Line",
     "station_code": "NNGI"
   },
   {
-    "id": "279",
+    "id": "258",
     "station_name": "Najafgarh",
     "metro_line": "Grey Line",
     "station_code": "NFGH"
   },
   {
-    "id": "288",
+    "id": "259",
     "station_name": "Dhansa Bus Stand",
     "metro_line": "Grey Line",
     "station_code": "DNBT"
   },
 
   {
-    "id": "280",
+    "id": "260",
     "station_name": "New Delhi-Airport Express",
     "metro_line": "Orange Line",
     "station_code": "NDI"
   },
   {
-    "id": "281",
+    "id": "261",
     "station_name": "Shivaji Stadium",
     "metro_line": "Orange Line",
     "station_code": "SJSU"
   },
   {
-    "id": "282",
+    "id": "262",
     "station_name": "Dhaula Kuan",
     "metro_line": "Orange Line",
     "station_code": "DKV"
   },
   {
-    "id": "283",
+    "id": "263",
     "station_name": "Delhi Aerocity",
     "metro_line": "Orange Line",
     "station_code": "DACY"
   },
   {
-    "id": "284",
+    "id": "264",
     "station_name": "IGI Airport",
     "metro_line": "Orange Line",
     "station_code": "APOT"
   },
   {
-    "id": "285",
+    "id": "265",
     "station_name": "Dwarka Sector 21",
     "metro_line": "Orange Line",
     "station_code": "DSTO"
   },
   {
-    "id": "286",
-    "station_name": "YASHOBHOOMI DWARKA SECTOR - 25",
+    "id": "266",
+    "station_name": "Yashobhoomi Dwarka Sector 25",
     "metro_line": "Orange Line",
     "station_code": "IICC"
+  },
+
+  {
+    "id": "267",
+    "station_name": "Noida Electronic City",
+    "metro_line": "Blue Line",
+    "station_code": "NECC"
   }
 ]

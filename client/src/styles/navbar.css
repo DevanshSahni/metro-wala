@@ -12,6 +12,11 @@
   background-color: #ffffff;
 }
 
+.navbarWrapper a{
+  all: unset;
+  cursor: pointer;
+}
+
 .navbarHeading {
   font-weight: 900;
   font-size: 24px;

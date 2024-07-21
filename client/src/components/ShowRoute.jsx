@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "../styles/showRoute.css";
-import dmrc from "../assets/images/icon_dmrc.png";
-import timer from "../assets/images/icon_time.png";
+import dmrc from "../assets/images/icon_dmrc.svg";
+import timer from "../assets/images/icon_time.svg";
 import {
   FaIndianRupeeSign,
   FaArrowRight,
@@ -10,6 +10,7 @@ import {
   FaCaretDown,
   FaCircle,
 } from "react-icons/fa6";
+import { GiTwoCoins } from "react-icons/gi";
 import stations from "../assets/data/stations.json";
 import { IoFootsteps } from "react-icons/io5";
 import { IoIosSwap } from "react-icons/io";
@@ -22,17 +23,28 @@ const ShowRoute = () => {
   const [routeInfo, setRouteInfo] = useState("");
   const navigate = useNavigate();
 
+  const getRoute = useCallback(async () => {
+    const response = await fetch(
+      `${process.env.REACT_APP_SERVER_URL}/find-route`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          type: shortestRoute ? "least-distance" : "minimum-interchange",
+          originCode,
+          destinationCode,
+        }),
+      }
+    );
+    if (response.status === 404) {
+      alert(response.message);
+    }
+    const data = await response.json();
+    setRouteInfo(data);
+    console.log(data);
+  }, [shortestRoute]);
+
   useEffect(() => {
-    const getRoute = async () => {
-      const response = await fetch(
-        `https://backend.delhimetrorail.com/api/v2/en/station_route/${originCode}/${destinationCode}/${
-          shortestRoute ? "least-distance" : "minimum-interchange"
-        }/${new Date().toISOString().slice(0, 23)}`
-      );
-      const data = await response.json();
-      setRouteInfo(data);
-      console.log(data);
-    };
     getRoute();
   }, [shortestRoute, originCode, destinationCode]);
 
@@ -125,7 +137,7 @@ const ShowRoute = () => {
               Time<b>{convertIntoMinutes(routeInfo.total_time)} mins</b>
             </h4>
             <h4 className="routeSummaryFooterElement">
-              <FaIndianRupeeSign className="routeSummaryFooterIcon" />
+              <GiTwoCoins className="routeSummaryFooterIcon" />
               Fare
               <b>
                 <FaIndianRupeeSign />
@@ -135,7 +147,7 @@ const ShowRoute = () => {
           </div>
         </header>
 
-        <div className="routeTab">
+        {/* <div className="routeTab">
           <button
             type="button"
             className={`routeTabButton ${
@@ -154,7 +166,7 @@ const ShowRoute = () => {
           >
             <h5>Minimum Interchange</h5>
           </button>
-        </div>
+        </div> */}
 
         <main className="routeDescription">
           {routeInfo?.route?.map((routeElement, idx) => (

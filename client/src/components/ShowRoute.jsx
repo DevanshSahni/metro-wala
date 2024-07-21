@@ -27,7 +27,7 @@ const ShowRoute = () => {
     const response = await fetch(
       `${process.env.REACT_APP_SERVER_URL}/find-route`,
       {
-        method: "post",
+        method: "POST",
         credentials: 'include',
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

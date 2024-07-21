@@ -27,7 +27,8 @@ const ShowRoute = () => {
     const response = await fetch(
       `${process.env.REACT_APP_SERVER_URL}/find-route`,
       {
-        method: "POST",
+        method: "post",
+        credentials: 'include',
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           type: shortestRoute ? "least-distance" : "minimum-interchange",

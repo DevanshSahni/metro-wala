@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import PlanJourney from "./components/PlanJourney";
 import ShowRoute from "./components/ShowRoute";
-import CreateData from "./components/CreateData";
+// import CreateData from "./components/CreateData";
 
 const App = () => {
   return (

@@ -42,8 +42,7 @@ const ShowRoute = () => {
     }
     const data = await response.json();
     setRouteInfo(data);
-    console.log(data);
-  }, [shortestRoute]);
+  }, [shortestRoute, originCode, destinationCode]);
 
   useEffect(() => {
     getRoute();

@@ -38,7 +38,6 @@ const findRoute = async (req, res) => {
         originCode,
         destinationCode,
       });
-      console.log(route);
       if(route == null) res.status(404).json({message:"Route not find"})
       res.status(200).json(route);
     } else {
@@ -46,7 +45,6 @@ const findRoute = async (req, res) => {
         originCode,
         destinationCode,
       });
-      console.log(route);
       if(route == null) res.status(404).json({message:"Route not find"})
       res.status(200).json(route);
     }

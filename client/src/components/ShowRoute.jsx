@@ -147,26 +147,24 @@ const ShowRoute = () => {
           </div>
         </header>
 
-        {/* <div className="routeTab">
+        <div className="routeTab">
           <button
             type="button"
-            className={`routeTabButton ${
-              shortestRoute && "activeRouteTabButton"
-            }`}
+            className={`routeTabButton ${shortestRoute && "activeRouteTabButton"
+              }`}
             onClick={() => setShortestRoute(true)}
           >
             <h5>Shortest Route</h5>
           </button>
           <button
             type="button"
-            className={`routeTabButton ${
-              !shortestRoute && "activeRouteTabButton"
-            }`}
+            className={`routeTabButton ${!shortestRoute && "activeRouteTabButton"
+              }`}
             onClick={() => setShortestRoute(false)}
           >
             <h5>Minimum Interchange</h5>
           </button>
-        </div> */}
+        </div>
 
         <main className="routeDescription">
           {routeInfo?.route?.map((routeElement, idx) => (
